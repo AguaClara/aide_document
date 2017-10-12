@@ -5,3 +5,6 @@ __pycache__/
 /.coverage
 *.egg*
 *.pyc
+*.aux
+*.log
+*.pdf
