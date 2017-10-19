@@ -1,0 +1,133 @@
+{
+	"ave_chlor_dose_conc": {
+		"value": 1.00,
+		"units": "mg/L”
+	},
+	“max_coag_dose_conc”: {
+		“value”: 40.0,
+		“units”: “mg/L”
+	},
+    “min_sed_slopes_to_floc_weir_height”: {
+        “value”: 0.250,
+        “units”: “m”
+ 	},
+ 	“max_floc_headloss”: {
+    	“value”: 0.400,
+        “units”: “m”
+    },
+	"plant_flow":{
+		"value":23.0,
+		"unit":"L/s"
+	},
+	"chem_slab_thickness":{
+		"value":0.200,
+		"unit":"m"
+	},
+	"drain_channel_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"filter_box_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"filter_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"floc_dividing_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"floc_slab_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"floc_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"plant_floor_thickness":{
+		"value":0.200,
+		"unit":"m"
+	},
+	"plant_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"sed_channel_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"sed_dividing_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"sed_wall_thickness":{
+		"value":0.150,
+		"unit":"m"
+	},
+	"plant_flow":{
+		"value":23.0,
+		"unit":"L/s"
+	},
+	"plant_total_headloss":{
+		"value":2.25,
+		"unit":"m"
+	},
+	"plant_freeboard_height":{
+		"value":10.0,
+		"unit":"cm"
+	},
+	"max_entrance_tank_length":{
+		"value":1.51,
+		"unit":"m"
+	},
+	"entrance_tank_height":{
+		"value":2.47,
+		"unit":"m"
+	},
+	"entrance_tank_length":{
+		"value":1.49,
+		"unit":"m"
+	},
+	"entrance_tank_width":{
+		"value":56.0,
+		"unit":"cm"
+	},
+	"entrance_tank_apparent_height":{
+		"value":1.42,
+		"unit":"m"
+	},
+	"max_filter_open_weir_hl": {
+	        "value": 2.0,
+	        "units": "mm"
+	    },
+	"filter_sand_es_diam": {
+	        "value”: 500,
+	        "units”: "microm"
+	    },
+	"uc_filter_sand_ratio" : 1.65,
+	"filter_sand60_diam" : { 
+	    "value": 825,
+	    "units": "microm"
+	    },  
+	"iu_filter_sand" : 0.400,
+	"vol_filter_sand" : { 
+	    "value": 2.5,
+	    "units": "kL"
+	    },  
+	"minlosscoef_kozeny": 5.0,
+	“rho_filter_sand”: {
+		“value”:2.65,
+		“units”: “kg/L”
+	}
+	       
+}
+
+
+
+
+
+
+
