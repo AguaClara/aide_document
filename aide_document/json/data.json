@@ -17,83 +17,83 @@
     },
     "plant_flow": {
         "value": 23.0,
-        "unit": "L/s"
+        "units": "L/s"
     },
     "chem_slab_thickness": {
         "value": 0.200,
-        "unit": "m"
+        "units": "m"
     },
     "drain_channel_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "filter_box_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "filter_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "floc_dividing_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "floc_slab_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "floc_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "plant_floor_thickness": {
         "value": 0.200,
-        "unit": "m"
+        "units": "m"
     },
     "plant_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "sed_channel_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "sed_dividing_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "sed_wall_thickness": {
         "value": 0.150,
-        "unit": "m"
+        "units": "m"
     },
     "plant_total_headloss": {
         "value": 2.25,
-        "unit": "m"
+        "units": "m"
     },
     "plant_freeboard_height": {
         "value": 10.0,
-        "unit": "cm"
+        "units": "cm"
     },
     "max_entrance_tank_length": {
         "value": 1.51,
-        "unit": "m"
+        "units": "m"
     },
     "entrance_tank_height": {
         "value": 2.47,
-        "unit": "m"
+        "units": "m"
     },
     "entrance_tank_length": {
         "value": 1.49,
-        "unit": "m"
+        "units": "m"
     },
     "entrance_tank_width": {
         "value": 56.0,
-        "unit": "cm"
+        "units": "cm"
     },
     "entrance_tank_apparent_height": {
         "value": 1.42,
-        "unit": "m"
+        "units": "m"
     },
     "max_filter_open_weir_hl": {
         "value": 2.0,

@@ -1,12 +1,23 @@
 
+import json
 from utils import read_json
 
+in_file = open('json/data.json','r')
 
+json_string = in_file.read()
 
-file = open('json/data.json','r')
+in_file.close()
 
-json_string = file.read()
+parsed_json = json.loads(json_string)
 
-file.close()
+out_file = open('latex/header_file.tex', 'w')
 
-read_json("max_coag_dose_conc",json_string)
+prefix = "\\newcommand{\\"
+infix = '}{'
+suffix = '}\n'
+
+for key in parsed_json:
+    value = read_json(key, json_string)
+    out_file.write(prefix + key + infix + value + suffix)
+
+out_file.close()
