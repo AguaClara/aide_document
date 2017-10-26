@@ -17,7 +17,13 @@ infix = '}{'
 suffix = '}\n'
 
 for key in parsed_json:
-    value = read_json(key, json_string)
-    out_file.write(prefix + key + infix + value + suffix)
+    try:
+        value = read_json(key, json_string)
+    except:
+        print('un-handled json structure, not adding to latex header file')
+        print("\"" + key + "\"" + ": " + json.dumps(parsed_json[key], sort_keys=False, 
+                        indent=4, separators=(',', ': ')))
+    else:
+        out_file.write(prefix + key + infix + value + suffix)
 
 out_file.close()

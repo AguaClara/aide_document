@@ -9,3 +9,5 @@ def read_json(json_key, json_string):
         return str(parsed_json[json_key])
     elif 'value' in parsed_json[json_key] and 'units' in parsed_json[json_key]:
         return str(parsed_json[json_key]['value']) + ' ' + parsed_json[json_key]['units']
+    else:
+        raise
