@@ -25,5 +25,4 @@ for key in parsed_json:
                         indent=4, separators=(',', ': ')))
     else:
         out_file.write(prefix + key + infix + value + suffix)
-
 out_file.close()
