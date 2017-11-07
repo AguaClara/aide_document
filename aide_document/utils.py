@@ -10,4 +10,7 @@ def read_json(json_key, json_string):
     elif 'value' in parsed_json[json_key] and 'units' in parsed_json[json_key]:
         return str(parsed_json[json_key]['value']) + ' ' + parsed_json[json_key]['units']
     else:
-        raise
+        raise 
+
+
+###add error handling here instead of in json_to_latex.py

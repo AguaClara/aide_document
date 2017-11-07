@@ -2,7 +2,7 @@
 import json
 from utils import read_json
 
-in_file = open('json/data.json','r')
+in_file = open('json/data.json','r') #add try catch, raise file not found
 
 json_string = in_file.read()
 
@@ -16,6 +16,7 @@ prefix = "\\newcommand{\\"
 infix = '}{'
 suffix = '}\n'
 
+###move error handling to utils.py
 for key in parsed_json:
     try:
         value = read_json(key, json_string)
