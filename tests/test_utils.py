@@ -3,7 +3,8 @@ aide_document tests.
 """
 
 import unittest
-from aide_document.utils import Constants, orbital_speed, circumference, orbital_period
+import io
+from aide_document.utils import read_json
 
 
 class TestUtils(unittest.TestCase):
@@ -12,45 +13,31 @@ class TestUtils(unittest.TestCase):
     """
 
     def setUp(self):
-        pass
+        self.test1 = 'aide_document/json/test1.json'
 
-    def test_orbital_speed(self):
-        """
-        Calculate the orbital speed of an object.
-        """
-        answer = orbital_speed(
-            Constants.Earth,
-            600000,
-            70
-        )
-        answer = round(answer, 3)
-        self.assertEqual(
-            answer,
-            2425.552
-        )
+    def test_read_json_no_units(self):
+        try:
+            in_file = open(self.test1,'r')    
+        except IOError:
+            self.assertEqual(1,0, "can't find test1.json")
+            return
+        
+        json_string = in_file.read()
+        in_file.close()
+        out = read_json("test_key_1",json_string)
+        self.assertEqual(out, "5")
 
-    def test_circumference(self):
-        """
-        2*pi*r
-        """
-        answer = circumference(600000)
-        answer = round(answer, 3)
-        self.assertEqual(
-            answer,
-            3769911.184
-        )
+    def test_read_json_w_units(self):
+        try:
+            in_file = open(self.test1,"r")
+        except IOError:
+            self.assertEqual(1,0, "can't find test1.json")
+            return
 
-    def test_orbital_period(self):
-        """
-        Calculate the orbital period of an object.
-        """
-        answer = orbital_period(
-            Constants.Earth,
-            600000,
-            70
-        )
-        answer = round(answer, 3)
-        self.assertEqual(
-            answer,
-            1554.43
-        )
+        json_string = in_file.read()
+        in_file.close()
+        out = read_json("test_key_2", json_string)
+        self.assertEqual(out, "10.00 mg/L")
+
+if __name__ == '__main__':
+    unittest.main()
