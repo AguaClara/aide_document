@@ -1,7 +1,9 @@
 """
 General purpose utility library..
 """
+
 import json
+from json_error import JsonError, JsonKeyError 
 
 #read_json(json_key,json_string) is a function that 
 #takes in a json_key and the json_string and returns
@@ -10,7 +12,13 @@ import json
 #or a values and units attribute associated with it. If 
 #not, then failure is raised.
 def read_json(json_key, json_string):
-    parsed_json = json.loads(json_string)
+    try:
+        parsed_json = json.loads(json_string)
+    except JSONDecodeError as err:
+        print("invalid json:")
+        print(json_string)
+        raise
+
     #Checks if there is a float or int associated with the key. This condition
     #is only satisfied if the key has a number associated with it.
     if isinstance(parsed_json[json_key], float) or isinstance(parsed_json[json_key], int):
@@ -20,7 +28,7 @@ def read_json(json_key, json_string):
     elif 'value' in parsed_json[json_key] and 'units' in parsed_json[json_key]:
         return str(parsed_json[json_key]['value']) + ' ' + parsed_json[json_key]['units']
     else:
-        raise 
+        raise JsonKeyError(json_key, json.dumps(parsed_json[json_key], sort_keys=False, indent=4, separators=(',', ': ')))
 
 
 ###add error handling here instead of in json_to_latex.py

@@ -2,9 +2,17 @@ import json
 #Must import the read_json function from utils.py
 #in order to get the output to be displayed on the 
 #latex file
-from utils import read_json
 
-in_file = open('json/data.json','r') #add try catch, raise file not found
+from utils import read_json
+from json_error import JsonError, JsonKeyError
+
+in_file_path = 'json/data.json'
+try:
+    in_file = open(in_file_path,'r') 
+except IOError:
+    print("Could not read file:" + in_file_path)
+    raise
+
 json_string = in_file.read()
 in_file.close()
 
@@ -24,11 +32,12 @@ for key in parsed_json:
     try:
         #Calls read_json function from utils.py
         value = read_json(key, json_string)
-    except:
+    except JsonKeyError as key_err:
     	#Error message
         print('un-handled json structure, not adding to latex header file')
-        print("\"" + key + "\"" + ": " + json.dumps(parsed_json[key], sort_keys=False, 
-                        indent=4, separators=(',', ': ')))
+        print(key_err.key + ":")
+        print(key_err.value)
+        raise
     else:
     	#Writes the line to the latex file. 
         out_file.write(prefix + key + infix + value + suffix)
