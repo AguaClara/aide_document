@@ -4,6 +4,23 @@
 [![codecov.io](https://codecov.io/github/hbetts/orbitalpy/coverage.svg?branch=master)](https://codecov.io/github/AguaClara/aide_document?branch=master)
 
 About this project...
+## Current State and Goals
+11/12/17: We originally had a file called json_to_latex.py, which converts a json file to latex by simply running the json_to_latex.py file. However, we updated it to put this file's contents in a protected function, so that an import from someone else won't run our code. 
+
+An AIDE Document compliant json has variables that should have values and/or units associated with them; thus, one or two fields associated with a variable. Here are two examples: 
+
+"flocculator_width" {
+  "value": 50.0;
+  "units": "cm";
+}
+
+"flocculator_ratio" : 50;
+
+
+A future goal is to be able to handle the following. If a variable does not follow this structure, then it should have variables of the above design within it, like a list of these types. 
+
+As of right now, the make file has hardcoded json and latex file paths, but we would like to allow the user to choose which json and latex file paths to use, and easily update these. 
+
 ## Overview
 ![architecture](https://docs.google.com/drawings/d/e/2PACX-1vTYhFFvPg2Pc06VDjqJHLjhOIx6gHSd71P6tPxNrN4ECgOSUc1eTTCaAq9XqnKxwLJae8cuBnah_XDw/pub?w=960&h=720)
 The important python, json, and latex files of this project can be found in the aide_document folder. Explanations of these files can be found below or in the files themselves, because they are documented. The high-level explanation of this repository is that the python scripts help convert the json file to a latex header file.  
