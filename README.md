@@ -5,6 +5,7 @@
 
 About this project...
 ## Overview
+![architecture](https://docs.google.com/drawings/d/e/2PACX-1vTYhFFvPg2Pc06VDjqJHLjhOIx6gHSd71P6tPxNrN4ECgOSUc1eTTCaAq9XqnKxwLJae8cuBnah_XDw/pub?w=960&h=720)
 The important python, json, and latex files of this project can be found in the aide_document folder. Explanations of these files can be found below or in the files themselves, because they are documented. The high-level explanation of this repository is that the python scripts help convert the json file to a latex header file.  
 
 
