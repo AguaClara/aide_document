@@ -49,6 +49,12 @@ help:
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 	@echo "  dummy      to check syntax errors of document sources"
 
+
+report:
+	cd aide_document && \
+	python json_to_latex.py && \
+	cd ..
+
 .PHONY: clean
 clean:
 	rm -rf $(BUILDDIR)/*
