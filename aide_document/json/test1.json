@@ -3,7 +3,7 @@
     "test_key_2": {
         "value": 10.00,
         "units": "mg/L"
-    }
+    },
     "test_key_3": "5",
     "test_key_4": {
     	"value":10.00,
@@ -14,5 +14,4 @@
     	"value":"10",
     	"units": "mg/L"
     }
-
 }
