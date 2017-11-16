@@ -3,7 +3,7 @@ General purpose utility library..
 """
 
 import json
-from json_error import JsonError, JsonKeyError 
+from aide_document.json_error import JsonError, JsonKeyError 
 
 #read_json(json_key,json_string) is a function that 
 #takes in a json_key and the json_string and returns

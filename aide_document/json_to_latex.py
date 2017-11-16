@@ -3,8 +3,8 @@ import json
 #in order to get the output to be displayed on the 
 #latex file
 
-from utils import read_json
-from json_error import JsonError, JsonKeyError
+from aide_document.utils import read_json
+from aide_document.json_error import JsonError, JsonKeyError
 
 def json_to_latex_header(json_path, header_path):
     try:
