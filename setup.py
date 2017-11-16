@@ -44,14 +44,16 @@ class Coverage(Command):
 setup(
     author='AguaClara',
     author_email='aguaclara@cornell.edu',
-    description='aide_document',
-    download_url='',
+    classifiers = [],
+    description='translate json file into latex variables',
+    download_url='https://github.com/AguaClara/aide_document/archive/0.1.tar.gz',
     cmdclass={
         'coverage': Coverage,
     },
     install_requires=[
     ],
-    license='Apache License (2.0)',
+    keywords = ['json', 'latex', 'conversion'],
+    license='MIT License',
     name='aide_document',
     packages=[
         'aide_document',
@@ -65,6 +67,6 @@ setup(
         'tox>=2.3.1,<3.0.0',
         'virtualenv>=15.0.1,<16.0.0'
     ],
-    url='',
-    version='1.0.0'
+    url='https://github.com/AguaClara/aide_document',
+    version='0.1.0'
 )
