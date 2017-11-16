@@ -4,7 +4,7 @@ aide_document tests.
 
 import unittest
 import io
-from utils import read_json
+from aide_document.utils import read_json
 
 
 class TestUtils(unittest.TestCase):

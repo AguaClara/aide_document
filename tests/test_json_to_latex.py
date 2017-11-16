@@ -19,4 +19,4 @@ class TestJson2Latex(unittest.TestCase):
        f1 = open(header_file, 'r')
        f2 = open(header_file_check, 'r')
 
-       assertEqual(f1.read(), f2.read())
+       self.assertEqual(f1.read(), f2.read())
