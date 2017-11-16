@@ -36,6 +36,13 @@ utils.py contains the read_json function, which is called in json_to_latex.py. T
 ## Design Goals
 aide_document/json_to_latex.py should be able to process all json files, no matter what their syntax is. The goal is to make it work recursively, so that more complex json files with nested keys can be inputted. Additionally, making the process of downloading the code and running the python script for the json to latex conversion as simple as possible is a predominant goal. 
 
+## Pip Versions
+0.1.0
+Uploaded the code as of 11/14/2017. Had bugs with import lines. json_error not found resulted when the function read_json was called. 
+
+0.1.1
+Attempted to fix bug from version 0.1.0 by adding in the folder aide_document in the import lines to specify where the items to be imported are and fix the issue. 
+
 ## Installation
 
 Installation instructions...

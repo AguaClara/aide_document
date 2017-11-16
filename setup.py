@@ -46,7 +46,7 @@ setup(
     author_email='aguaclara@cornell.edu',
     classifiers = [],
     description='translate json file into latex variables',
-    download_url='https://github.com/AguaClara/aide_document/archive/0.1.tar.gz',
+    download_url='https://github.com/AguaClara/aide_document/archive/0.1.1.tar.gz',
     cmdclass={
         'coverage': Coverage,
     },
@@ -68,5 +68,5 @@ setup(
         'virtualenv>=15.0.1,<16.0.0'
     ],
     url='https://github.com/AguaClara/aide_document',
-    version='0.1.0'
+    version='0.1.1'
 )
