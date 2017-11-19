@@ -43,10 +43,10 @@ class TestUtils(unittest.TestCase):
         out = read_json("test_key_2", json_string)
         self.assertEqual(out, "10.00 mg/L")
 
-        #Should not have 3 fields associated with a variable
-        with self.assertRaises(TypeError):
-          read_json("test_key_4", json_string)
-        
+        #Unimplemented currently. Should not make a difference if there is an extra unused variable in the json
+        out2 = read_json("test_key_4", json_string)
+        self.assertEqual(out2, "10.00 mg/L")
+
         #Should not have a string associated with the Value field
         with self.assertRaises(TypeError):
           read_json("test_key_5", json_string)
