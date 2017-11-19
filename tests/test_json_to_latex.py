@@ -2,6 +2,7 @@
 
 import unittest
 import io
+import os.path
 from aide_document.json_to_latex import json_to_latex_header
 
 class TestJson2Latex(unittest.TestCase):
@@ -10,9 +11,17 @@ class TestJson2Latex(unittest.TestCase):
     """
 
     def test_1(self):
-       data_file = 'aide_document/json/test2.json' 
-       header_file = 'aide_document/latex/test1.tex'
-       header_file_check = 'aide_document/latex/test1_check.tex'
+     
+       data_file = 'tests/test_json_files/test2.json' 
+       header_file = 'tests/test_latex_files/test1.tex'
+
+       
+       if(os.path.isfile(header_file)):
+            f = open(header_file, 'w') 
+            f.write("")
+            f.close()
+
+       header_file_check = 'tests/test_latex_files/test1_check.tex'
         
        json_to_latex_header(data_file, header_file)
 

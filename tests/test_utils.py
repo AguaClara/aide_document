@@ -13,7 +13,7 @@ class TestUtils(unittest.TestCase):
     """
 
     def setUp(self):
-        self.test1 = 'aide_document/json/test1.json'
+        self.test1 = 'tests/test_json_files/test1.json'
 
     def test_read_json_no_units(self):
         try:
@@ -25,7 +25,7 @@ class TestUtils(unittest.TestCase):
         json_string = in_file.read()
         in_file.close()
         out = read_json("test_key_1",json_string)
-        self.assertEqual(out, "5")
+        self.assertEqual(out, '5')
 
         #Value should not have type string
         with self.assertRaises(TypeError):
