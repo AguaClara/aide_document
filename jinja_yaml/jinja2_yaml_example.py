@@ -4,7 +4,7 @@ import aide_design
 from aide_design.units import unit_registry as u
 from jinja2 import Environment, FileSystemLoader
 
-# Render template from template environment and context
+# Function to render template from template environment and context
 def render_template(template_filename, context):
     return TEMPLATE_ENVIRONMENT.get_template(template_filename).render(context)
 
