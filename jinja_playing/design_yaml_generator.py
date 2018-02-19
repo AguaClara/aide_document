@@ -1,7 +1,7 @@
 import yaml
 import jinja2
-from aide_design.units import unit_registry as u
 import aide_design
+from aide_design.units import unit_registry as u
 import numpy as np
 import os
 import flochydraulicfunctiontest as floctest
