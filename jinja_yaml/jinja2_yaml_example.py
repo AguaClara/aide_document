@@ -15,11 +15,7 @@ def render_template(template_filename, context):
 
 def create_index_html():
     fname = "output.md"
-    context = {
-        'flow_rate': 67,
-        'sed_tank_length': 60,
-        'blablabla': 23
-    }
+    context = yaml.load(file('input.yml'))
     #
     with open(fname, 'w') as f:
         html = render_template('example.md', context)
