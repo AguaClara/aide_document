@@ -32,7 +32,7 @@ unit_registry.default_format = '.4g'
 pd.options.display.float_format = '{:,.4g}'.format
 
 
-def set_sig_fig(n: int):
+def set_sig_fig(n, int):
     """Set the default number of significant figures used to print pint, pandas and numpy values
     quantities. Defaults to 4.
     
