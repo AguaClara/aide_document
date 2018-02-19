@@ -18,6 +18,12 @@ TEMPLATE_ENVIRONMENT = Environment(
 # Declare output file and parameters
 fname = "output.md"
 context = yaml.load(file('input.yml'))
+for key,value in context.items():
+    index = value.find('*')
+    num = float((value[:index]).replace(" ", ""))
+    unit = (value[index+1:]).replace(" ", "")
+    value = num * u.parse_expression(unit)
+
 
 # Write to file from parameters and template
 with open(fname, 'w') as f:
