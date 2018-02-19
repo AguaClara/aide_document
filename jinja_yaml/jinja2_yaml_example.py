@@ -1,5 +1,6 @@
 import os
 import yaml
+from aide_design.units import unit_registry as u
 from jinja2 import Environment, FileSystemLoader
 
 # Set up template environment from "templates" folder
