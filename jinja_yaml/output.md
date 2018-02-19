@@ -1,1 +1,1 @@
-Hello, the flow rate is 67, the sed tank length is 60 and the blablabla is 23.
+Hello, the flow rate is 67 * u.L/u.s, the sed tank length is 60 * u.m and the blablabla is 23 * u.degC.
