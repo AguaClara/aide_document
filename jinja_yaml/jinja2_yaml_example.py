@@ -1,5 +1,6 @@
 import os
 import yaml
+import aide_design
 from aide_design.units import unit_registry as u
 from jinja2 import Environment, FileSystemLoader
 
