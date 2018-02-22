@@ -15,17 +15,21 @@ TEMPLATE_ENVIRONMENT = Environment(
     loader=FileSystemLoader(os.path.join(PATH, 'templates')),
     trim_blocks=False)
 
+
+
 # Declare output file and parameters
 fname = "output.md"
 context = yaml.load(file('input.yml'))
+new_dic = {}
 for key,value in context.items():
-    index = value.find('*')
-    num = float((value[:index]).replace(" ", ""))
-    unit = (value[index+1:]).replace(" ", "")
-    value = num * u.parse_expression(unit)
-
-
+    new_dic[key] = eval(value)
+#    index = value.find('*')
+#    num = float((value[:index]).replace(" ", ""))
+#    unit = (value[index+1:]).replace(" ", "")
+#    value = num * u.parse_expression(unit)
 # Write to file from parameters and template
+print(new_dic)
+
 with open(fname, 'w') as f:
-    html = render_template('example.md', context)
+    html = render_template('example.md', new_dic)
     f.write(html)
