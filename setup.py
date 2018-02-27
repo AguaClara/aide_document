@@ -121,7 +121,12 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['os', 'yaml', 'aide_design', 'jinja2.Environment', 'jinja2.FileSystemLoader'],  # Optional
+    install_requires=[ # Optional
+        'os',
+        'yaml',
+        'aide_design',
+        'jinja2.Environment',
+        'jinja2.FileSystemLoader',],
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
