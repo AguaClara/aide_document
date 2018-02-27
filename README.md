@@ -1,7 +1,7 @@
 # Aide Document
 
 # Team Lead
-Matan Presberg(mgp64)
+Matan Presberg (mgp64)
 
 ## Team Members:
 Karan Newatia (kn348)
