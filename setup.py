@@ -82,7 +82,7 @@ setup(
         'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
-        'Intended Audience :: AguaClara Engineers',
+        'Intended Audience :: Developers',
         'Topic :: Software Development :: Templating Engine',
 
         # Pick your license as you wish
