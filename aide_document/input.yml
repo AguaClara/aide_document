@@ -1,3 +1,19 @@
-flow_rate: 60 * u.L/u.s
-sed_tank_length: u.m
-blablabla: u.degC
+testAssem:
+  testCylinder:
+    user_params:
+      circleDiam: 80 mm
+      circleHeight: 100 mm
+  testWheelAndBox:
+    testBox:
+      user_params:
+        boxHeight: 200 mm
+        boxLength: 100 mm
+        boxWidth: 150 mm
+        circleDepth: 20 mm
+        circleDiam: 80 mm
+    testWheel:
+      user_params:
+        circleDiam: 50 mm
+        circleHeight: 20 mm
+  user_params:
+    num_cylinders: '80'
