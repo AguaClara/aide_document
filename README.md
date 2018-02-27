@@ -31,15 +31,13 @@ To convert markdown to pdf using pandoc, you must install TeX Live, a LaTeX engi
 ## Semester Goals
 
 The AIDE Document sub-team's goals for the Spring 2018 semester are to use Jinja2 to parse YAML input and convert it to Markdown/.pdf files conforming to templates provided by AIDE Design.
-##
-## Team Lead:
-Matan Presberg (mgp64)
+## Team
 
-## Team Members:
-Karan Newatia (kn348)
-
-Oliver Leung (oal22)
-
-Yilin Lu (yl668)
+| Name           | Role   | Email             |
+|----------------|--------|-------------------|
+| Matan Presberg | Lead   | mgp64@cornell.edu |
+| Karan Newatia  | Member | kn348@cornell.edu |
+| Oliver Leung   | Member | oal22@cornell.edu |
+| Yilin Lu       | Member | yl668@cornell.edu |
 
 ## Reports and Presentations
