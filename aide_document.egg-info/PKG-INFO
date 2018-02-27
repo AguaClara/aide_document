@@ -1,0 +1,39 @@
+Metadata-Version: 1.2
+Name: aide-document
+Version: 1.0
+Summary: Provides templating engine for use within the AguaClara AIDE sub-team.
+Home-page: https://github.com/AguaClara/aide_document
+Author: Cornell University AguaClara
+Author-email: aguaclara@cornell.edu
+License: UNKNOWN
+Project-URL: AguaClara, http://aguaclara.cornell.edu/
+Description-Content-Type: UNKNOWN
+Description: # Aide Document
+        
+        # Team Lead
+        Matan Presberg(mgp64)
+        
+        ## Team Members:
+        Karan Newatia (kn348)
+        
+        Oliver Leung (oal22)
+        
+        Yilin Lu (yl668)
+        
+        ## Semester Goals
+        The Aide Document subteam's goals are to use Jinja2 to parse YAML input and convert it to markdown/pdf.
+        
+        ## Links to Reports and Presentations
+        
+Keywords: aguaclara aide document templating yaml markdown
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: AguaClara Engineers
+Classifier: Topic :: Software Development :: Templating Engine
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
