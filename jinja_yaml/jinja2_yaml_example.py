@@ -1,7 +1,5 @@
 import os
 import yaml
-import aide_design
-from aide_design.units import unit_registry as u
 from jinja2 import Environment, FileSystemLoader
 
 # Function to render template from template environment and context
@@ -21,7 +19,7 @@ context = yaml.load(file('input.yml'))
 
 # Making each value parse-able
 for key,value in context.items():
-    context[key] = eval(value)
+    context[key] = value
 
 # Final render
 with open(fname, 'w') as f:
