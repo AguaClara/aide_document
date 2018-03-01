@@ -15,7 +15,7 @@ def render_template(template_filename, context):
 
 def render_documentation_template(input_name, output_name, template_name):
     # Declare output file and parameters
-    context = yaml.load(file(input_name))
+    context = yaml.load(open(input_name))
 
     # Making each value parse-able
     for key,value in context.items():
