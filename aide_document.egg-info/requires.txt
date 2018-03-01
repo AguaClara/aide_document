@@ -1,8 +1,7 @@
 os
 yaml
 aide_design
-jinja2.Environment
-jinja2.FileSystemLoader
+jinja2
 
 [dev]
 check-manifest
