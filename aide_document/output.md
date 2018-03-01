@@ -10,9 +10,5 @@ Ok, so let's make a list now:
 1. testWheelAndBox
   1. testBox
     1. user_params
-      1. boxHeight
-      2. boxLength
-#### testWheel
-##### user_params
-###### circleDiam
-###### circleHeight
+      1. boxHeight: 200 mm
+      2. boxLength: 100 mm
