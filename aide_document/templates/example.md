@@ -30,14 +30,10 @@ But please directly put the image file in the image folder!
 {% set dict = table.tableContent %}
 A table:
 
-
 | {{table.tableColumn1}} | {{table.tableColumn2}} |
-
 
 | --- | --- |
 
-
 {% for dict_item in dict %}{% for key, value in dict_item.items() %}| {{key}} | {{value}} |
-
 
 {% endfor %}{% endfor %}
