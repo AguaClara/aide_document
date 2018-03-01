@@ -37,6 +37,7 @@ Colons can be used to align columns.
 =======
 
 A table:
+
 | Letter | Value |
 | --- | --- |
 | A | val1 |
