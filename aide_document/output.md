@@ -31,14 +31,8 @@ But please directly put the image file in the image folder!
 A table:
 
 | Letter | Value |
-
 | --- | --- |
-
 | A | val1 |
-
 | B | val2 |
-
 | C | val3 |
-
 | D | val4 |
-
