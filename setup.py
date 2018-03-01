@@ -125,8 +125,7 @@ setup(
         'os',
         'yaml',
         'aide_design',
-        'jinja2.Environment',
-        'jinja2.FileSystemLoader',],
+        'jinja2'],
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
