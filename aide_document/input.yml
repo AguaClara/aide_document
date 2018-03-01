@@ -17,3 +17,5 @@ testAssem:
         circleHeight: 20 mm
   user_params:
     num_cylinders: '80'
+officialSite: http://aguaclara.cornell.edu
+imageUrl: cornell.png
