@@ -27,14 +27,6 @@ Here's an image(hover to see the title text):
 You only need to write the name of the image in the input yaml file.
 But please directly put the image file in the image folder!
 
-<<<<<<< HEAD
-Colons can be used to align columns.
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-=======
 
 A table:
 
@@ -44,4 +36,3 @@ A table:
 | B | val2 |
 | C | val3 |
 | D | val4 |
->>>>>>> 7fd2074df708a69210722fd8f1932d0bef69b510
