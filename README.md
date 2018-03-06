@@ -28,9 +28,9 @@ To convert markdown to pdf using pandoc, you must install TeX Live, a LaTeX engi
 ## Installing Pandoc
 
 More detailed instructions can be found [here](https://pandoc.org/installing.html).
-*[Windows Installation File](https://github.com/jgm/pandoc/releases/download/2.1.2/pandoc-2.1.2-windows.msi "Windows Pandoc Installation File")
-*MacOS: in Terminal, run `brew install pandoc`
-*[Linux Installation File](https://github.com/jgm/pandoc/releases/download/2.1.2/pandoc-2.1.2-1-amd64.deb "Linux Pandoc Installation File")
+* [Windows Installation File](https://github.com/jgm/pandoc/releases/download/2.1.2/pandoc-2.1.2-windows.msi "Windows Pandoc Installation File")
+* MacOS: in Terminal, run `brew install pandoc`
+* [Linux Installation File](https://github.com/jgm/pandoc/releases/download/2.1.2/pandoc-2.1.2-1-amd64.deb "Linux Pandoc Installation File")
 
 # About
 
