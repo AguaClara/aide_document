@@ -39,12 +39,12 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0.2',  # Required
+    version='0.0.2',  # Required
 
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#summary
-    description='Provides templating engine for use within the AguaClara AIDE sub-team.',  # Required
+    description='Provides templating engine for use within the AguaClara AIDE.',  # Required
 
     # This is an optional longer description of your project that represents
     # the body of text which users will see when they visit PyPI.
@@ -69,6 +69,9 @@ setup(
     # This should be a valid email address corresponding to the author listed
     # above.
     author_email='aguaclara@cornell.edu',  # Optional
+
+    # License that the package uses
+    license = 'MIT',
 
     # Classifiers help users find your project by categorizing it.
     #
@@ -113,7 +116,7 @@ setup(
     #
     #   py_modules=["my_module"],
     #
-    packages=find_packages(exclude=['contrib', 'docs', 'tests']),  # Required
+    packages=find_packages(),  # Required
 
     # This field lists other packages that your project depends on to run.
     # Any package you put here will be installed by pip when your project is
@@ -122,7 +125,6 @@ setup(
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[ # Optional
-        'aide_design',
         'jinja2'],
 
     # List additional groups of dependencies here (e.g. development
@@ -179,4 +181,8 @@ setup(
     project_urls={  # Optional
         'AguaClara': 'http://aguaclara.cornell.edu/',
     },
+
+    include_package_data=True,
+    test_suite="tests",
+    zip_safe=False
 )
