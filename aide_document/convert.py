@@ -12,9 +12,9 @@ def render_template(template_filename, context):
         trim_blocks=False)
     return TEMPLATE_ENVIRONMENT.get_template(template_filename).render(context)
 
-def render_documentation_template(input_name, output_name, template_name):
+def yaml_to_md(input_name, output_name, template_name):
     """
-    [render_documentation_template] takes three file names: <input>, <output>, <template>
+    [yaml_to_md] takes three file names: <input>, <output>, <template>
     """
     # Declare output file and parameters
     context = yaml.load(open(data/input_name))
@@ -28,9 +28,9 @@ def render_documentation_template(input_name, output_name, template_name):
         output = render_template(template_name, context)
         f.write(output)
 
-def to_pdf(input_filename, output_filename):
+def md_to_pdf(input_filename, output_filename):
     """
-    to_pdf converts input_filename file to pdf,
+    md_to_pdf converts input_filename file to pdf,
     and the name of the pdf file is output_filename
 
     Parameters
