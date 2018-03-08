@@ -31,12 +31,13 @@ def render_documentation_template(input_name, output_name, template_name):
 
 def to_pdf(input_file, output_file):
     """
-    to_pdf converts a file into pdf
+    to_pdf converts input_file file to pdf,
+    and the name of the pdf file is output_file
 
     Parameters
     ----------
     input_file : string
-    name of file to convert to to pdf
+    name of file to convert to pdf
 
     output_file : string
     name of the pdf file
