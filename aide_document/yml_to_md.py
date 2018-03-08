@@ -43,4 +43,4 @@ def to_pdf(input_filename, output_filename):
 
     """
 
-    os.system("pandoc " + input_file + " -o " + output_file + ".pdf" )
+    os.system("pandoc " + input_filename + " -o " + output_filename + ".pdf" )
