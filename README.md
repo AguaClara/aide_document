@@ -20,16 +20,18 @@ If you choose to install via `git`, be sure to put the `aide_document` folder in
 
 ## Installing a LaTeX Engine
 
-To convert markdown to pdf using pandoc, you must install TeX Live, a LaTeX engine for your operating system. Here are installation files for each OS:
+To convert Markdown to PDF using Pandoc, you must install TeX Live for your operating system. Here are installation files for each OS:
 * [Windows](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe "Windows TeX Live Installation File")
 * [MacOS](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg "MacOS MacTeX Installation File") (Note: this is MacTeX, an optimized variant of TeX Live.)
 * [Linux](http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz "Linux TeX Live Installation File")
 
 ## Installing Pandoc
 
-More detailed instructions can be found [here](https://pandoc.org/installing.html).
+Pandoc is required for converting Markdown files to PDF. More detailed instructions can be found [here](https://pandoc.org/installing.html).
 * [Windows Installation File](https://github.com/jgm/pandoc/releases/download/2.1.2/pandoc-2.1.2-windows.msi "Windows Pandoc Installation File")
 * MacOS: in Terminal, run `brew install pandoc`
+* to install homebrew, paste this into the command line:
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
 * [Linux Installation File](https://github.com/jgm/pandoc/releases/download/2.1.2/pandoc-2.1.2-1-amd64.deb "Linux Pandoc Installation File")
 
 # About
@@ -42,6 +44,7 @@ The AIDE Document sub-team's goals for the Spring 2018 semester are to use Jinja
 | Name           | Role   | Email             |
 |----------------|--------|-------------------|
 | Matan Presberg | Lead   | mgp64@cornell.edu |
+| Kevin Juan     | RA     | kj89@cornell.edu  |
 | Karan Newatia  | Member | kn348@cornell.edu |
 | Oliver Leung   | Member | oal22@cornell.edu |
 | Yilin Lu       | Member | yl668@cornell.edu |
