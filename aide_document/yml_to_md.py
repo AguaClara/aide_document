@@ -25,3 +25,19 @@ def render_documentation_template(input_name, output_name, template_name):
     with open(output_name, 'w') as f:
         output = render_template(template_name, context)
         f.write(output)
+
+def to_pdf(input_file, output_file):
+    """
+    to_pdf converts a file into pdf
+
+    Parameters
+    ----------
+    input_file : string
+    name of file to convert to to pdf
+
+    output_file : string
+    name of the pdf file
+
+    """
+
+    os.system("pandoc " + input_file + " -o " + output_file + ".pdf" )
