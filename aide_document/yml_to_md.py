@@ -27,6 +27,7 @@ def render_documentation_template(input_name, output_name, template_name):
     with open(data/output_name, 'w') as f:
         output = render_template(template_name, context)
         f.write(output)
+<<<<<<< HEAD
 
 def to_pdf(input_filename, output_filename):
     """
@@ -44,3 +45,5 @@ def to_pdf(input_filename, output_filename):
     """
 
     os.system("pandoc " + input_filename + " -o " + output_filename + ".pdf" )
+=======
+>>>>>>> bc3dce348a1db1e827efb96901ae97dbd0f8cb20
