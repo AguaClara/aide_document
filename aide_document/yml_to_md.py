@@ -14,6 +14,9 @@ def render_template(template_filename, context):
     return TEMPLATE_ENVIRONMENT.get_template(template_filename).render(context)
 
 def render_documentation_template(input_name, output_name, template_name):
+    """
+    [render_documentation_template] takes three file names: <input>, <output>, <template>
+    """
     # Declare output file and parameters
     context = yaml.load(open(input_name))
 
