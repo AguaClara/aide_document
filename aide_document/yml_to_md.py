@@ -28,17 +28,17 @@ def render_documentation_template(input_name, output_name, template_name):
         output = render_template(template_name, context)
         f.write(output)
 
-def to_pdf(input_file, output_file):
+def to_pdf(input_filename, output_filename):
     """
-    to_pdf converts input_file file to pdf,
-    and the name of the pdf file is output_file
+    to_pdf converts input_filename file to pdf,
+    and the name of the pdf file is output_filename
 
     Parameters
     ----------
-    input_file : string
+    input_filename : string
     name of file to convert to pdf
 
-    output_file : string
+    output_filename : string
     name of the pdf file
 
     """
