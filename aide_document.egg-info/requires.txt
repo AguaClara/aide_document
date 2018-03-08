@@ -1,8 +1,0 @@
-aide_design
-jinja2
-
-[dev]
-check-manifest
-
-[test]
-coverage

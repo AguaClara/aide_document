@@ -3,3 +3,6 @@
 *.pyc
 .idea
 __pycache__
+/aide_document.egg-info
+/dist
+/build
