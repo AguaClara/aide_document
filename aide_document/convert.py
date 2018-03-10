@@ -8,7 +8,7 @@ def render_template(template_filename, context):
     PATH = os.path.dirname(os.path.abspath(__file__))
     TEMPLATE_ENVIRONMENT = Environment(
         autoescape=False,
-        loader=FileSystemLoader(PATH),
+        loader=FileSystemLoader(os.path.join(PATH, 'data')),
         trim_blocks=False)
     return TEMPLATE_ENVIRONMENT.get_template(template_filename).render(context)
 
@@ -17,14 +17,14 @@ def yaml_to_md(input_name, output_name, template_name):
     [yaml_to_md] takes three file names: <input>, <output>, <template>
     """
     # Declare output file and parameters
-    context = yaml.load(open(data/input_name))
+    context = yaml.load(open('data/' + input_name))
 
     # Making each value parse-able
     for key,value in context.items():
         context[key] = value
 
     # Final render
-    with open(data/output_name, 'w') as f:
+    with open('data/' + output_name, 'w') as f:
         output = render_template(template_name, context)
         f.write(output)
 
