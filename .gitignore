@@ -2,7 +2,11 @@
 .DS_Store
 *.pyc
 .idea
+<<<<<<< HEAD
 __pycache__
 /aide_document.egg-info
 /dist
 /build
+=======
+__pycache__
+>>>>>>> bc3dce348a1db1e827efb96901ae97dbd0f8cb20
