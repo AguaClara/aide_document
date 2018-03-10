@@ -1,6 +1,5 @@
-
-import yml_to_md as doc
+from aide_document import convert
 
 # [render_documentation_template] takes three file names:
 # <input>, <output>, <template>
-doc.render_documentation_template("input.yml", "output.md", "template.md")
+convert.yaml_to_md("input.yml", "output.md", "template.md")
