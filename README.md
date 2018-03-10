@@ -6,17 +6,19 @@ This is a tool for combining .yaml data files with Markdown templates via the Ji
 
 ## Installing `aide_document`
 
-### Via `pip`
-
-1. Ensure that you have `pip` installed by running `pip -V`. `pip` comes with Python 2 >=2.7.9 or Python 3 >=3.4, but if you don't have it, [follow these instructions](https://pip.pypa.io/en/stable/installing/ "Pip Installation Instructions").
-2. Run `pip install aide_document --user` anywhere.
-
 ### Via `git`
 
 1. Ensure that you have `git` installed by running `git --version`. If you don't have it, [get it here](https://git-scm.com/downloads "Git Installation") and configure it [using these instructions](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup "Git Configuration").
 2. Run `git clone https://github.com/AguaClara/aide_document.git` in the location of your choice.
 
-If you choose to install via `git`, be sure to put the `aide_document` folder in the same directory as the files that utilize the package.
+If you choose to install via `git`, be sure to put the `aide_document/aide_document` subfolder in the same directory as the files that utilize the package.
+
+### Via `pip`
+
+**NOTE: the current `pip` installation is nonfunctional at this time. Please `git clone` this repository for the time being.**
+
+1. Ensure that you have `pip` installed by running `pip -V`. `pip` comes with Python 2 >=2.7.9 or Python 3 >=3.4, but if you don't have it, [follow these instructions](https://pip.pypa.io/en/stable/installing/ "Pip Installation Instructions").
+2. Run `pip install aide_document --user` anywhere.
 
 ## Installing a LaTeX Engine
 
@@ -31,6 +33,17 @@ Pandoc is required for converting Markdown files to PDF. More detailed instructi
 * [Windows Installation File](https://github.com/jgm/pandoc/releases/download/2.1.2/pandoc-2.1.2-windows.msi "Windows Pandoc Installation File")
 * MacOS: in Terminal, run `brew install pandoc`
 * [Linux Installation File](https://github.com/jgm/pandoc/releases/download/2.1.2/pandoc-2.1.2-1-amd64.deb "Linux Pandoc Installation File")
+# Using the Package
+
+First, import the package at the top of your file:
+
+```python
+from aide_document import convert
+```
+
+Within `convert`, there are two methods with self-explanatory functions:
+- `yaml_to_md(input_name, output_name, template_name)`
+- `md_to_pdf(input_filename, output_filename)`
 
 # About
 
