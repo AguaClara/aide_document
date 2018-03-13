@@ -1,3 +1,3 @@
 import js2py
-
-js2py.eval_js('console.log( "Hello World!" )')
+from js2py.internals import seval
+seval.eval_js_vm('console.log( "Hello World!" )')
