@@ -44,6 +44,7 @@ from aide_document import convert
 Within `convert`, there are two methods with self-explanatory functions:
 - `yaml_to_md(input_name, output_name, template_name)`
 - `md_to_pdf(input_filename, output_filename)`
+- `docx_to_md(input_filename, output_filename)`
 
 # About
 

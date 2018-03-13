@@ -1,7 +1,7 @@
 # Hello, the circleDiam is 80 mm
 ## This is an example of the documentation generation.
 
-## Inter-page links
+### Inter-page links
 [Table](#table)
 
 ### Title 1
