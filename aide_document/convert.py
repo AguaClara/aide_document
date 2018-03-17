@@ -19,10 +19,6 @@ def yaml_to_md(input_name, output_name, template_name):
     # Declare output file and parameters
     context = yaml.load(open('data/' + input_name))
 
-    # Making each value parse-able
-    for key,value in context.items():
-        context[key] = value
-
     # Final render
     with open('data/' + output_name, 'w') as f:
         output = render_template(template_name, context)
