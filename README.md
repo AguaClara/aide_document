@@ -46,6 +46,15 @@ Within `convert`, there are two methods with self-explanatory functions:
 - `md_to_pdf(input_filename, output_filename)`
 - `docx_to_md(input_filename, output_filename)`
 
+You can also translate the file on a line by line base:
+```python
+from aide_document import translate
+```
+
+Within `translate`, there is one methods with self-explanatory functions:
+- `translate(input_name, source_language, target_language, output_name)`
+
+
 # About
 
 ## Semester Goals
