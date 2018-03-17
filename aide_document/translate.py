@@ -4,11 +4,12 @@ def translate(filename, src, tar, dest):
     with open("data/" + filename) as f:
         content = f.readlines()
     content = [x.rstrip() for x in content]
-    text = []
+    out = open("data/" + dest, "w")
     for elt in content:
+        print elt + "\n"
         t = google_trans.api(elt, src, tar)
-        text = text + [t.encode('utf-8')]
-    with open("data/" + dest, "w") as f:
-        for l in text:
-            f.write(l)
-            f.write("\n")
+        out.write(t.encode('utf-8'))
+        out.write("\n")
+    out.close()
+
+translate("output.md", "en", "hi", "translated2.md")
