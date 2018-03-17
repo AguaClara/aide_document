@@ -2,15 +2,15 @@
 ## Este es un ejemplo de la generación de documentación.
 
 ### Enlaces entre páginas
-[Tabla] (# tabla)
+[Mesa](#table)
 
 ### Título 1
 Ahora tenemos un parámetro llamado ** boxHeight **, su ruta en el input.yml es
 * testAssem> testWheelAndBox> testBox> user_params> boxHeight *.
 Para mostrar el valor de esto, escribimos
-`` `jinja2
+```jinja2
 {{testAssem.testWheelAndBox.testBox.user_params.boxHeight}}
-`` `
+```
 Y el `código` en línea tiene` `back-ticks around` it.
 
 ### Lista
@@ -22,11 +22,11 @@ Bien, entonces hagamos una lista ahora:
 2. boxLength: 100 mm
 
 ### Enlace
-[enlace del sitio web de aguaclara] (http://aguaclara.cornell.edu)
+[enlace del sitio web de aguaclara](http://aguaclara.cornell.edu)
 
 ### Imagen
-Aquí hay una imagen (pase el mouse para ver el texto del título):
-! [Universidad de Cornell] (./ image / cornell.png)
+Aquí hay una imagen(hover to see the title text):
+![Universidad de Cornell](./image/cornell.png)
 Solo necesita escribir el nombre de la imagen en el archivo yaml de entrada.
 ¡Pero, por favor, coloque directamente el archivo de imagen en la carpeta de imágenes!
 
