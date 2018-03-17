@@ -21,7 +21,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='aide_document',
-    version='0.1.4',
+    version='0.1.5',
     description='Provides templating engine for use within the AguaClara AIDE.',
     url='https://github.com/AguaClara/aide_document',
     author='Cornell University AguaClara',
