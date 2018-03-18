@@ -1,8 +1,12 @@
+# IDE stuff
 .vscode
 .DS_Store
+
+# From Python 2.7
 *.pyc
-.idea
 __pycache__
+
+# For PyPI distribution
 /aide_document.egg-info
 /dist
 /build
