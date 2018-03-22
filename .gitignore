@@ -12,4 +12,4 @@ __pycache__
 /build
 
 # For Pelican website
-# pelican_web/output
+pelican_web/output
