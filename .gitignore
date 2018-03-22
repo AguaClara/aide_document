@@ -10,3 +10,6 @@ __pycache__
 /aide_document.egg-info
 /dist
 /build
+
+# For Pelican website
+# pelican_web/output
