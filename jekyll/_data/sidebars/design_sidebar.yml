@@ -1,0 +1,19 @@
+entries:
+- title: Sidebar
+  product: The AIDE Design Team
+  levels: one
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: About
+      url: /design_about.html
+      output: web
+
+  - title: Demo
+    output: web
+    folderitems:
+    - title: A sample documentation
+      url: /design_something.html
+      output: web

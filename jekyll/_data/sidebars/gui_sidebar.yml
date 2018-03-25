@@ -1,0 +1,19 @@
+entries:
+- title: Sidebar
+  product: The AIDE GUI Team
+  levels: one
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: About
+      url: /gui_about.html
+      output: web
+
+  - title: Demo
+    output: web
+    folderitems:
+    - title: A sample documentation
+      url: /gui_something.html
+      output: web
