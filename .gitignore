@@ -11,5 +11,6 @@ __pycache__
 /dist
 /build
 
-# For Pelican website
-pelican_web/output
+# For jekyll website
+jekyll/_site
+jekyll/.jekyll-metadata
