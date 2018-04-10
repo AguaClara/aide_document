@@ -47,3 +47,5 @@ from aide_document import translate
 
 Within `translate`, there are the following self-explanatory functions:
 - `translate(input_name, source_language, target_language, output_name)`
+
+A sample Jekyll website for the outputs: https://aguaclara.github.io/aide_document/index.html
