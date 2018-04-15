@@ -77,3 +77,19 @@ The treatment processes – preliminary sedimentation, coagulation, flow control
 | Number of sedimentation bays per tank | {{N.SedBays}}                 |
 | Flocculator depth                     | {{flocculation_depth}}        |
 | Flocculator type                      | {{EN.FlocType}}               |
+<table style="width:100%">
+  <tr>
+    <td colspan="2">Lastname</td> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>

@@ -92,3 +92,6 @@ description: "Aguaclara water treatment plant build documentation"
 # needed for sitemap.xml file only
 url: http://idratherbewriting.com
 #baseurl: /documentation-theme-jekyll
+
+host: 0.0.0.0:4000
+# output IP address
