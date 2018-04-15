@@ -20,4 +20,4 @@ def translate(filename, src, tar, dest):
         out.write("\n")
     out.close()
 
-translate("output.md", "en", "hi", "translated2.md")
+
