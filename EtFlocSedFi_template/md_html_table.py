@@ -18,11 +18,11 @@ def md_html_table(filename, dest):
     content = [x.strip() for x in content]
     out = open(dest, "w")
     for elt in content:
-        if elt.startswith("| **"):
-            title = parse("","**",elt[4:])
+        if elt.startswith("| *"):
+            title = parse("","*",elt[3:])
             elt = str(
 '''<tr>
-    <th colspan="2">''')+str(title)+str('''"</th>
+    <th colspan="2">*''')+str(title)+str('''*</th>
 </tr>''')
             out.write(elt)
             out.write("\n")

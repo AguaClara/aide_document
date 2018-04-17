@@ -1,29 +1,19 @@
-<table style="width:100%">
 <tr>
-    <th colspan="2">Geometric Assumptions"</th>
+    <th colspan="2">*Variables*</th>
 </tr>
 <tr>
-    <th>Thickness of the plant walls</th>
-    <th>{{plant_thickness_walls}}</th>
+    <th>Number of sedimentation tanks</th>
+    <th>{{number_sedimentation_tank}}</th>
 </tr>
 <tr>
-    <th>Minimum concrete thickness</th>
-    <th>{{T.ConcreteMin}}</th>
+    <th>Number of sedimentation bays per tank</th>
+    <th>{{N.SedBays}}</th>
 </tr>
 <tr>
-    <th>Minimum tank dimension for construction worker to fit inside</th>
-    <th>{{W.HumanMin}}</th>
+    <th>Flocculator depth</th>
+    <th>{{flocculation_depth}}</th>
 </tr>
 <tr>
-    <th>Minimum height from bottom of drain channel to top of walkway so that operator can fit inside</th>
-    <th>{{H.HumanAccess}}</th>
+    <th>Flocculator type</th>
+    <th>{{EN.FlocType}}</th>
 </tr>
-<tr>
-    <th>Minimum width of a channel for constructability</th>
-    <th>{{W.ChannelMin}}</th>
-</tr>
-<tr>
-    <th>Plant freeboard height</th>
-    <th>{{plant_freeboard_height}}</th>
-</tr>
-</table style="width:100%">
