@@ -1,3 +1,4 @@
+<table style="width:100%">
 <tr>
     <th colspan="2">Geometric Assumptions"</th>
 </tr>
@@ -25,3 +26,4 @@
     <th>Plant freeboard height</th>
     <th>{{plant_freeboard_height}}</th>
 </tr>
+</table style="width:100%">
