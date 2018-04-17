@@ -8,7 +8,7 @@ The main functions of the entrance tank are to remove solids from the water thro
 
 Large particulates settle out into the hoppers, and collect near the drains at the bottom. When the water reaches the end of the tank, it flows through the orifices of the riser pipe, which acts as a linear flow orifice meter (LFOM). It is designed for a capture velocity of {{W.EtCapture}} to  remove these particulates. A length of {{entrance_tank_length}} is assigned to the entrance tank to correspond to the sedimentation tank length plus enough space to fit the float of the chemical dose controller and the rapid mix pipes. The width, {{entrance_tank_width}}, is then assigned to ensure the minimum desired capture velocity is met while still allowing enough space for a person to fit inside and construct the tank. The depth of the tank is then determined such that the velocity in the upper rectangular portion of the tank does not exceed the velocity in the flocculator, {{flocculation_velocity}}, while ensuring the depth is sufficiently small that the drains are easy to access. In this case, the tank has a height of {{tank_height}}.
 
-To allow for easy maintenance, {{N.EtHoppers}} hoppers must be built into the entrance tank, at an angle of {{AN.EtSlope}}, forcing sediments to slide to the bottom where the {{drain_width}} drains are located. When too much sediment has accumulated, the upper drain pipes must be removed until the sludge is flushed out. Directly below the entrance tank, there is a drain channel to collect the waste.	
+To allow for easy maintenance, {{N.EtHoppers}} hoppers must be built into the entrance tank, at an angle of {{AN.EtSlope}}, forcing sediments to slide to the bottom where the {{drain_width}} drains are located. When too much sediment has accumulated, the upper drain pipes must be removed until the sludge is flushed out. Directly below the entrance tank, there is a drain channel to collect the waste.
 
 As the raw water flows from the first hopper to the subsequent ones, it must pass through two trash racks, preventing large debris from entering the treatment process. Having two trash racks allows the plant to run with a grit screen even while the operator cleans one of them. The trash racks are made of rebar and slide into two slots built into the entrance tank wall. The center-to-center distance between the rebar, {{B.EtRebar}}, is set to ensure that debris large enough to clog the orifices in the linear flow orifice meter downstream (LFOM) are kept out.
 
@@ -16,28 +16,97 @@ Suspended particulates in the water settle out over the length of the entrance t
 
 #### Table 3
 
-| Entrance Tank                      |                        |
-| ---------------------------------- | ---------------------- |
-| Residence time                     |                        |
-| Capture velocity                   |                        |
-| Tank length                        | 1.47 m                 |
-| Tank width                         | 55.0 cm                |
-| Tank height                        | 2.46 m                 |
-| Hopper length                      | {{L.EtHopper}}         |
-| Hopper height                      | {{H.EtHopper}}         |
-| Last slope height                  | {{H.EtLastSlope}}      |
-| Hopper side slope angle            | {{AN.EtSlope}}         |
-| Hopper back slope angle            |                        |
-| Thickness of ledge between hoppers | {{T.EtHopperLedge}}    |
-| Number of full hoppers             | {{N.EtFullHopper}}     |
-| **Hopper Drains**                  |                        |
-| Hopper drain diameter              | 10.2 cm (4.00 in)      |
-| Hopper stop length                 | 2.46 m                 |
-| *Flow Control Components*          |                        |
-| Flow control valve diameter        | {{ND.EtFlowControl}}   |
-| Overflow weir pipe diameter        | {{ND.EtOverflowDrain}} |
-| Overflow weir pipe slot length     |                        |
-| Overflow weir slot depth           |                        |
-| **Trash Rack**                     |                        |
-| Trash rack rebar spacing           |                        |
-| Trash rack rebar diameter          |                        |
+<table style="width:100%">
+<tr>
+    <th colspan="2">*Entrance Tank*</th>
+</tr>
+<tr>
+    <th>Residence time</th>
+    <th></th>
+</tr>
+<tr>
+    <th>Capture velocity</th>
+    <th></th>
+</tr>
+<tr>
+    <th>Tank length</th>
+    <th>1.47 m</th>
+</tr>
+<tr>
+    <th>Tank width</th>
+    <th>55.0 cm</th>
+</tr>
+<tr>
+    <th>Tank height</th>
+    <th>2.46 m</th>
+</tr>
+<tr>
+    <th>Hopper length</th>
+    <th>{{L.EtHopper}}</th>
+</tr>
+<tr>
+    <th>Hopper height</th>
+    <th>{{H.EtHopper}}</th>
+</tr>
+<tr>
+    <th>Last slope height</th>
+    <th>{{H.EtLastSlope}}</th>
+</tr>
+<tr>
+    <th>Hopper side slope angle</th>
+    <th>{{AN.EtSlope}}</th>
+</tr>
+<tr>
+    <th>Hopper back slope angle</th>
+    <th></th>
+</tr>
+<tr>
+    <th>Thickness of ledge between hoppers</th>
+    <th>{{T.EtHopperLedge}}</th>
+</tr>
+<tr>
+    <th>Number of full hoppers</th>
+    <th>{{N.EtFullHopper}}</th>
+</tr>
+<tr>
+    <th colspan="2">*Hopper Drains*</th>
+</tr>
+<tr>
+    <th>Hopper drain diameter</th>
+    <th>10.2 cm (4.00 in)</th>
+</tr>
+<tr>
+    <th>Hopper stop length</th>
+    <th>2.46 m</th>
+</tr>
+<tr>
+    <th colspan="2">*Flow Control Components*</th>
+</tr>
+<tr>
+    <th>Flow control valve diameter</th>
+    <th>{{ND.EtFlowControl}}</th>
+</tr>
+<tr>
+    <th>Overflow weir pipe diameter</th>
+    <th>{{ND.EtOverflowDrain}}</th>
+</tr>
+<tr>
+    <th>Overflow weir pipe slot length</th>
+    <th></th>
+</tr>
+<tr>
+    <th>Overflow weir slot depth</th>
+    <th></th>
+</tr>
+<tr>
+    <th colspan="2">*Trash Rack*</th>
+</tr>
+<tr>
+    <th>Trash rack rebar spacing</th>
+    <th></th>
+</tr>
+<tr>
+    <th>Trash rack rebar diameter</th>
+    <th></th>
+</tr>
+</table>
