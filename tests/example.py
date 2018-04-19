@@ -4,7 +4,7 @@ from aide_document import convert
 # <input>, <output>, <template>
 # convert.yaml_to_md("input.yml", "output.md", "template.md")
 
-convert.docx_to_md("data/EtFlocSedFiEnglish.docx", "data/EtFlocSedFiEnglish")
+convert.docx_to_md("data/start/EtFlocSedFiEnglish.docx", "data/finish/EtFlocSedFiEnglish")
 
 # [translate] takes four arguments:
 # <input>, <source_language>, <target_language>, <output>
