@@ -2,7 +2,7 @@
 ## Este es un ejemplo de la generación de documentación.
 
 ### Enlaces entre páginas
-[Mesa](#table)
+[Table](#table)
 
 ### Título 1
 Ahora tenemos un parámetro llamado ** boxHeight **, su ruta en el input.yml es
@@ -22,11 +22,11 @@ Bien, entonces hagamos una lista ahora:
 2. boxLength: 100 mm
 
 ### Enlace
-[enlace del sitio web de aguaclara](http://aguaclara.cornell.edu)
+[aguaclara website link](http://aguaclara.cornell.edu)
 
 ### Imagen
-Aquí hay una imagen(hover to see the title text):
-![Universidad de Cornell](./image/cornell.png)
+Here's an image(hover to see the title text):
+![Cornell University](./image/cornell.png)
 Solo necesita escribir el nombre de la imagen en el archivo yaml de entrada.
 ¡Pero, por favor, coloque directamente el archivo de imagen en la carpeta de imágenes!
 
