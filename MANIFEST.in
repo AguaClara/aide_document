@@ -1,1 +1,3 @@
 include aide_document/templates/*
+include jekyll/*
+include tests/*
