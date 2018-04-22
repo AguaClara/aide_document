@@ -27,10 +27,15 @@ def render_document(template_name, data_name, output_name):
 
     This will then combine the data and template files and write to a new output file within data/.
     """
+
     # Set up environment and load templates from pip package
     env = Environment(loader=PackageLoader('aide_document'))
 
     # Create output file, open/render template and data files
     with open(output_name, 'w') as output_file:
         output = env.get_template(template_name).render(yaml.load(open(data_name)))
+        output_name = output_name[:-3]
+        output_file.write("---\n")
+        output_file.write("title: " + output_name + "\n")
+        output_file.write("---\n")
         output_file.write(output)
