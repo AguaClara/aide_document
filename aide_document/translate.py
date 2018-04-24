@@ -19,5 +19,3 @@ def translate(filename, src, tar, dest):
         out.write(elt)
         out.write("\n")
     out.close()
-
-
