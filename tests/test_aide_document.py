@@ -6,11 +6,13 @@ def test_combine():
     assert cmp('actual/combined.md', 'expected/combined.md')
 
 #def test_convert():
-#    convert.md_to_pdf('data/output.md', 'data/output')
-#    convert.docx_to_md("data/EtFlocSedFiEnglish.docx", "data/EtFlocSedFiEnglish")
+#    convert.md_to_pdf('actual/combined.md', 'actual/converted')
+#    assert cmp('actual/converted.pdf', 'expected/converted.pdf')
+#    convert.docx_to_md('actual/EtFlocSedFiEnglish.docx', 'actual/EtFlocSedFiEnglish')
+#    assert cmp('actual/EtFlocSedFiEnglish.docx', 'expected/EtFlocSedFiEnglish.md')
 
-#def test_translate():
-#    translate.translate("data/output.md", "en", "es", "data/translated.md")
-#    translate.translate("data/output.md", "en", "hi", "data/translated2.md")
-
-#combine.render_document('template.md', 'actual/input.yaml', 'actual/combined.md')
+def test_translate():
+    translate.translate('actual/combined.md', 'en', 'es', 'actual/translated_es.md')
+    assert cmp('actual/translated_es.md', 'expected/translated_es.md')
+    translate.translate('actual/combined.md', 'en', 'hi', 'actual/translated_hi.md')
+    assert cmp('actual/translated_hi.md', 'expected/translated_hi.md')
