@@ -1,5 +1,5 @@
 ---
-title: data/output
+title: actual/combined
 ---
 # Hello, the circleDiam is 80 mm
 ## This is an example of the documentation generation.

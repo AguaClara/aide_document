@@ -6,6 +6,7 @@
 *.pyc
 __pycache__
 .cache
+.pytest_cache
 
 # For PyPI distribution
 /aide_document.egg-info
