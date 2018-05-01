@@ -10,6 +10,8 @@ Welcome to aide_document's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   combine
+
 
 
 Indices and tables
