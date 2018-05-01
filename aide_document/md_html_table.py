@@ -38,5 +38,3 @@ def md_html_table(filename, dest):
             out.write(elt)
             out.write("\n")
     out.close()
-
-md_html_table("table.md","table_html.md")
