@@ -6,8 +6,8 @@ def test_combine():
     assert cmp('actual/combined.md', 'expected/combined.md')
 
 def test_jekyll():
-    jekyll.add_frontmatter('actual/combined.md', 'test')
-    assert cmp('actual/combined.md', 'expected/combined_added_frontmatter.md')
+    jekyll.add_frontmatter('actual/combined.md', 'test', True)
+    assert cmp('actual/combined_added_frontmatter.md', 'expected/combined_added_frontmatter.md')
 
 def test_convert():
     convert.md_to_pdf('actual/combined.md', 'actual/converted')

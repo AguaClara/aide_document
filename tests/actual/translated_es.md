@@ -1,7 +1,4 @@
----
-título: prueba
----
-iam es 80 mm
+# Hola, el circleDiam es de 80 mm
 ## Este es un ejemplo de la generación de documentación.
 
 ### Enlaces entre páginas
