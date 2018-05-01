@@ -28,7 +28,7 @@ Bien, entonces hagamos una lista ahora:
 [enlace del sitio web de aguaclara](http://aguaclara.cornell.edu)
 
 ### Imagen
-Aquí hay una imagen(hover to see the title text):
+Aquí hay una imagen (pase el mouse para ver el texto del título):
 ![Universidad de Cornell](./image/cornell.png)
 Solo necesita escribir el nombre de la imagen en el archivo yaml de entrada.
 ¡Pero, por favor, coloque directamente el archivo de imagen en la carpeta de imágenes!
