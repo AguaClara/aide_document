@@ -1,0 +1,38 @@
+entries:
+
+- title: Sidebar
+  product: Table of Contents
+  levels: one
+  folders:
+
+  - title: Entrance tank/preliminary sedimentation
+    url: /entrance_tank_preliminary_sedimentation.html
+    output: web
+
+  - title: Linear flow orifice meter (LFOM)
+    url: /linear_flow_orifice_meter.html
+    output: web
+
+  - title: Chemical dose controller (CBC)
+    url: /chemical_dose_controller.html
+    output: web
+
+  - title: Rapid Mix
+    url: /rapid_mix.html
+    output: web
+
+  - title: Flocculation
+    url: /flocculation.html
+    output: web
+    folderitems:
+    - title: The sustainable approach
+      url: /the_sustainable_approach.html
+      output: web
+
+    - title: The treatment process
+      url: /the_treatment_process.html
+      output: web
+
+    - title: The AguaClara Design Tool
+      url: /the_aguaclara_design_tool.html
+      output: web

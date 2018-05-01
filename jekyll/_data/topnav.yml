@@ -7,7 +7,18 @@ topnav:
       external_url: http://aguaclara.cornell.edu
     - title: GitHub
       external_url: https://github.com/AguaClara/document-jekyll
+    - title: Disclaimer
+      url: /sisclaimer.html
+    - title: AguaClara
+      url: /aguaclara.html
+    - title: Design
+      url: /design.html
+    - title: Plant
+      url: /plant.html
+    - title: Materials
+      url: /materials.html
 
+"""
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
@@ -32,13 +43,25 @@ topnav_dropdowns:
 
     - title: Plant
       folderitems:
-        - title: About
-          url: /api_about.html
+        - title: Entrance tank/preliminary sedimentation
+          url: /entrance_tank_preliminary_sedimentation.html
+        - title: Linear flow orifice meter (LFOM)
+          url: /linear_flow_orifice_meter.html
+        - title: Chemical dose controller (CBC)
+          url: /chemical_dose_controller.html
+        - title: Rapid Mix
+          url: /rapid_mix.html
+        - title: Flocculation
+          url: /flocculation.html
 
     - title: Materials
       folderitems:
-        - title: About
-          url: /draw_about.html
-
-#Topnav dropdowns
-#
+        - title: Entrance Tank
+          url: /entrance_tank.html
+        - title: Flocculation Tank
+          url: /flocculation_tank.html
+        - title: Sedimentation Tank
+          url: /sedimentation_tank.html
+        - title: SRSF
+          url: /srsf.html
+  """

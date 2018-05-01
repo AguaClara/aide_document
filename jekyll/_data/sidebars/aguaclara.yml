@@ -1,0 +1,21 @@
+entries:
+  
+- title: Sidebar
+  product: Table of Contents
+  levels: one
+  folders:
+
+  - title: Introduction to AguaClara
+    output: web
+    folderitems:
+    - title: The sustainable approach
+      url: /the_sustainable_approach.html
+      output: web
+
+    - title: The treatment process
+      url: /the_treatment_process.html
+      output: web
+
+    - title: The AguaClara Design Tool
+      url: /the_aguaclara_design_tool.html
+      output: web
