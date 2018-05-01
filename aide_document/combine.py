@@ -4,7 +4,7 @@ from jinja2 import Environment, PackageLoader
 
 def render_document(template_name, data_name, output_name):
     """
-    Combines a MarkDown template file from the aide_document package with a local associated YAML data file, then outputs the rendered combination to a local MarkDown output file.
+    Combines a MarkDown template file from the aide_document package with a local associated YAML data file, adds YAML frontmatter for use in the Jekyll project, then outputs the rendered combination to a local MarkDown output file.
 
     Parameters
     ==========
