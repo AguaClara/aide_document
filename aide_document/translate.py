@@ -27,9 +27,11 @@ def translate(filename, src, tar, dest):
     to a special case(link, image or code block).
     """
     for elt in content:
+        # this if branch looks for code blocks and skip the url during translation
         if elt.startswith("```"):
             elt = elt
-        elif elt.find("(") != -1 and elt.find(")") != -1:
+        # this elif branch looks for links and images and skip the url during translation
+        elif elt.find("[") != -1 and elt.find("]") != -1 and elt.find("(") != -1 and elt.find(")") != -1:
             pause1 = elt.find("(")
             pause2 = elt.find(")")
             head = __google_trans.api(elt[0:pause1], src, tar)

@@ -7,6 +7,38 @@ topnav:
       external_url: http://aguaclara.cornell.edu
     - title: GitHub
       external_url: https://github.com/AguaClara/document-jekyll
-    
+
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
+    - title: Disclaimer
+      folderitems:
+        - title: Permission and Licensing Information
+          url: /permission_and_licensing_information.html
+
+    - title: AguaClara
+      folderitems:
+        - title: The sustainable approach
+          url: /the_sustainable_approach.html
+        - title: The treatment process
+          url: /the_treatment_process.html
+        - title: The AguaClara Design Tool
+          url: /the_aguaclara_design_tool.html
+
+    - title: Design
+      folderitems:
+        - title: Design Parameters
+          url: /design_parameters.html
+
+    - title: Plant
+      folderitems:
+        - title: About
+          url: /api_about.html
+
+    - title: Materials
+      folderitems:
+        - title: About
+          url: /draw_about.html
+
 #Topnav dropdowns
 #
