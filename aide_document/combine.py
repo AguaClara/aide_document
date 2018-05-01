@@ -34,8 +34,4 @@ def render_document(template_name, data_name, output_name):
     # Create output file, open/render template and data files
     with open(output_name, 'w') as output_file:
         output = env.get_template(template_name).render(yaml.load(open(data_name)))
-        output_name = output_name[:-3]
-        output_file.write("---\n")
-        output_file.write("title: " + output_name + "\n")
-        output_file.write("---\n")
         output_file.write(output)

@@ -9,7 +9,7 @@ def md_to_pdf(input_name, output_name):
     input_name : String
     Relative file location of the input file to where this function is being called.
 
-    output_name : string
+    output_name : String
     Relative file location of the output file to where this function is being called. Note that .pdf can be omitted.
     """
     if output_name[-4:] == '.pdf':
@@ -26,7 +26,7 @@ def docx_to_md(input_name, output_name):
     input_name : String
     Relative file location of the input file to where this function is being called.
 
-    output_name : string
+    output_name : String
     Relative file location of the output file to where this function is being called. Note that .md can be omitted.
     """
     if output_name[-5:] == '.docx':
