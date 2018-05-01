@@ -1,6 +1,3 @@
----
-title: actual/combined
----
 # Hola, el circleDiam es de 80 mm
 ## Este es un ejemplo de la generación de documentación.
 

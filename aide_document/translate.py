@@ -1,4 +1,4 @@
-from aide_document import google_trans
+from aide_document import __google_trans
 
 
 def translate(filename, src, tar, dest):
@@ -32,11 +32,11 @@ def translate(filename, src, tar, dest):
         elif elt.find("(") != -1 and elt.find(")") != -1:
             pause1 = elt.find("(")
             pause2 = elt.find(")")
-            head = google_trans.api(elt[0:pause1], src, tar)
-            tail = google_trans.api(elt[pause2+1:], src, tar)
+            head = __google_trans.api(elt[0:pause1], src, tar)
+            tail = __google_trans.api(elt[pause2+1:], src, tar)
             elt = head + elt[pause1:pause2+1] + tail
         else:
-            elt = google_trans.api(elt, src, tar)
+            elt = __google_trans.api(elt, src, tar)
         out.write(elt)
         out.write("\n")
 
