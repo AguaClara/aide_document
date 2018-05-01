@@ -23,7 +23,7 @@ def render_document(template_name, data_name, output_name):
 
     To render the document:
     >>> from aide_document import combine
-    >>> combine.render_document(template.md, data/params.yaml, data/output.md)
+    >>> combine.render_document('template.md', 'data/params.yaml', 'data/output.md')
 
     This will then combine the data and template files and write to a new output file within data/.
     """
@@ -31,7 +31,7 @@ def render_document(template_name, data_name, output_name):
     # Set up environment and load templates from pip package
     env = Environment(loader=PackageLoader('aide_document'))
 
-    # Create output file, open/render template and data files
+    # Create output file, open template and data files, then combine
     with open(output_name, 'w') as output_file:
         output = env.get_template(template_name).render(yaml.load(open(data_name)))
         output_file.write(output)

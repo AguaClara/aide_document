@@ -20,10 +20,11 @@ def md_to_pdf(input_name, output_name):
     
     To convert the document:
     >>> from aide_document import convert
-    >>> convert.md_to_pdf(data/doc.md, data/doc.pdf)
+    >>> convert.md_to_pdf('data/doc.md', 'data/doc.pdf')
 
     .pdf can also be omitted from the second argument.
     """
+
     if output_name[-4:] == '.pdf':
         os.system("pandoc " + input_name + " -o " + output_name)
     else:
@@ -53,6 +54,7 @@ def docx_to_md(input_name, output_name):
 
     .md can also be omitted from the second argument.
     """
+
     if output_name[-5:] == '.docx':
         os.system("pandoc " + input_name + " -o " + output_name)
     else:
