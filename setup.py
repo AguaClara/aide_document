@@ -9,7 +9,7 @@ setup(
     author_email='aguaclara@cornell.edu',
     license = 'MIT',
     packages=find_packages(),
-    install_requires=['jinja2'],
+    install_requires=['jinja2', 'os', 'yaml', 'googletrans'],
     include_package_data=True,
     test_suite="tests",
     zip_safe=False
