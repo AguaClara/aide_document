@@ -1,5 +1,4 @@
-from aide_document import __google_trans
-
+from googletrans import Translator
 
 def translate(filename, src, tar, dest):
     """
@@ -21,7 +20,7 @@ def translate(filename, src, tar, dest):
 
     content = [x.strip() for x in content]
     out = open(dest, "w")
-
+    translator = Translator()
     """
     The following section parses the strings in the list to check if it belongs
     to a special case(link, image or code block).
@@ -34,11 +33,11 @@ def translate(filename, src, tar, dest):
         elif elt.find("[") != -1 and elt.find("]") != -1 and elt.find("(") != -1 and elt.find(")") != -1:
             pause1 = elt.find("(")
             pause2 = elt.find(")")
-            head = __google_trans.api(elt[0:pause1], src, tar)
-            tail = __google_trans.api(elt[pause2+1:], src, tar)
+            head = translator.translate(elt[0:pause1], tar, src).text
+            tail = translator.translate(elt[pause2+1:], tar, src).text
             elt = head + elt[pause1:pause2+1] + tail
         else:
-            elt = __google_trans.api(elt, src, tar)
+            elt = translator.translate(elt, tar, src).text
         out.write(elt)
         out.write("\n")
 
