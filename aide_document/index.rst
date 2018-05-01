@@ -10,7 +10,7 @@ Welcome to aide_document's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   Documents/Github/aide_document/aide_document/combine
+   combine
 
 
 
