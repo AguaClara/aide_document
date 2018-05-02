@@ -7,7 +7,7 @@ add_frontmatter(file_name, title, makenew=False)
     Adds basic frontmatter to a MarkDown file that will be used in a Jekyll project.
 """
 
-def make_project
+#def make_project
 
 def add_frontmatter(file_name, title, makenew=False):
     """

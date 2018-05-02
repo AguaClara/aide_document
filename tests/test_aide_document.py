@@ -16,7 +16,7 @@ def test_convert():
     assert cmp('actual/EtFlocSedFiEnglish.docx', 'expected/EtFlocSedFiEnglish.md')
 
 def test_translate():
-    translate.translate('actual/combined.md', 'en', 'es', 'actual/translated_es.md')
+    translate.translate('actual/combined.md', 'actual/translated_es.md', 'es')
     assert cmp('actual/translated_es.md', 'expected/translated_es.md')
-    translate.translate('actual/combined.md', 'en', 'hi', 'actual/translated_hi.md')
+    translate.translate('actual/combined.md', 'actual/translated_hi.md', 'hi')
     assert cmp('actual/translated_hi.md', 'expected/translated_hi.md')
