@@ -3,6 +3,22 @@
 import yaml
 from googletrans import Translator
 
+def replace(dict,line):
+    words = line.split()
+    new_line = ""
+    for word in words:
+        find = dict.get(word)
+        last = word[-1]
+
+        if last == "," or last == ";" or last == ".": last = last + " "
+        else: last = " "
+
+        if find == None:
+            new_line + str(word) + last
+        else:
+            new_line + str(find) + last
+    return new_line
+
 def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwords_filename=''):
     """
     Converts a source file to a destination file in the selected language.
@@ -71,6 +87,8 @@ def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwo
                 if line.find("[") != -1 and line.find("]") != -1 and line.find("(") != -1 and line.find(")") != -1:
                     ignore_start = line.find("(")
                     ignore_end = line.find(")")
+                    head = replace(dict,head)
+                    tail = replace(dict,tail)
                     head = translator.translate(line[0:ignore_start], dest_lang, src_lang).text
                     tail = translator.translate(line[ignore_end+1:], dest_lang, src_lang).text
                     line = head + line[ignore_start:ignore_end+1] + tail
