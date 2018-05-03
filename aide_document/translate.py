@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import yaml
 from googletrans import Translator
 
