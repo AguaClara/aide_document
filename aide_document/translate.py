@@ -30,7 +30,7 @@ def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwo
     special.yaml is organized as follows:
     en_es:
       - tank : bote #TODO: add more/better translation examples
-    
+
     To translate it to Spanish:
     >>> from aide_document import translate
     >>> translate.translate('data/doc_en.md', 'data/doc_es.md', 'es', 'en', 'data/special.yaml')
@@ -40,21 +40,21 @@ def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwo
     translator = Translator() # Initialize translator object
 
     with open(src_filename) as srcfile, open(dest_filename, 'w') as destfile:
-        
-        lines = srcfile.readlines()
-        specialwords_list = []
 
-        # If special words file exists, place special word mappings into specialwords_list
+        lines = srcfile.readlines()
+        specialwords_dict = {}
+
+        # If special words file exists, place special word mappings into specialwords_dict
         if specialwords_filename != '':
             with yaml.load(open(specialwords_filename)) as specialwords_fulllist:
 
                 # Gets source language if not passed through
                 if src_lang == 'auto':
                     src_lang == str(translator.detect(lines[0]))[14:16]
-                
+
                 # Attempts to add the correct dictionary of special words
                 try:
-                    specialwords_list = specialwords_list_full[src_lang + '_' + dest_lang]
+                    specialwords_dict = specialwords_dict_full[src_lang + '_' + dest_lang]
                 except KeyError:
                     print('Special words file doesn\'t contain required language translation!')
 
