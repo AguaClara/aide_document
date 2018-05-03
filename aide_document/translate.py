@@ -3,6 +3,22 @@
 import yaml
 from googletrans import Translator
 
+def replace(dict,line):
+    words = line.split()
+    new_line = ""
+    for word in words:
+        find = dict.get(word)
+        last = word[-1]
+
+        if last == "," or last == ";" or last == ".": last = last + " "
+        else: last = " "
+
+        if find == None:
+            new_line + str(word) + last
+        else:
+            new_line + str(find) + last
+    return new_line
+
 def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwords_filename=''):
     """
     Converts a source file to a destination file in the selected language.
@@ -30,7 +46,7 @@ def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwo
     special.yaml is organized as follows:
     en_es:
       - tank : bote #TODO: add more/better translation examples
-    
+
     To translate it to Spanish:
     >>> from aide_document import translate
     >>> translate.translate('data/doc_en.md', 'data/doc_es.md', 'es', 'en', 'data/special.yaml')
@@ -40,21 +56,21 @@ def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwo
     translator = Translator() # Initialize translator object
 
     with open(src_filename) as srcfile, open(dest_filename, 'w') as destfile:
-        
-        lines = srcfile.readlines()
-        specialwords_list = {}
 
-        # If special words file exists, place special word mappings into specialwords_list
+        lines = srcfile.readlines()
+        specialwords_dict = {}
+
+        # If special words file exists, place special word mappings into specialwords_dict
         if specialwords_filename != '':
             with yaml.load(open(specialwords_filename)) as specialwords_fulllist:
 
                 # Gets source language if not passed through
                 if src_lang == 'auto':
                     src_lang == str(translator.detect(lines[0]))[14:16]
-                
+
                 # Attempts to add the correct dictionary of special words
                 try:
-                    specialwords_list = specialwords_list_full[src_lang + '_' + dest_lang]
+                    specialwords_dict = specialwords_dict_full[src_lang + '_' + dest_lang]
                 except KeyError:
                     print('Special words file doesn\'t contain required language translation!')
 
@@ -71,6 +87,8 @@ def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwo
                 if line.find("[") != -1 and line.find("]") != -1 and line.find("(") != -1 and line.find(")") != -1:
                     ignore_start = line.find("(")
                     ignore_end = line.find(")")
+                    head = replace(dict,head)
+                    tail = replace(dict,tail)
                     head = translator.translate(line[0:ignore_start], dest_lang, src_lang).text
                     tail = translator.translate(line[ignore_end+1:], dest_lang, src_lang).text
                     line = head + line[ignore_start:ignore_end+1] + tail
