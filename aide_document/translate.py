@@ -42,7 +42,7 @@ def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwo
     with open(src_filename) as srcfile, open(dest_filename, 'w') as destfile:
         
         lines = srcfile.readlines()
-        specialwords_list = []
+        specialwords_list = {}
 
         # If special words file exists, place special word mappings into specialwords_list
         if specialwords_filename != '':

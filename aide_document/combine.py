@@ -29,7 +29,7 @@ def render_document(template_name, data_name, output_name):
     """
 
     # Set up environment and load templates from pip package
-    env = Environment(loader=PackageLoader('aide_document'))
+    env = Environment(loader=PackageLoader('aide_document')) #TODO: add custom path to templates
 
     # Create output file, open template and data files, then combine
     with open(output_name, 'w') as output_file:
