@@ -4,19 +4,46 @@ import yaml
 from googletrans import Translator
 
 def replace(dict,line):
+    """
+    Find and replace the special words according to the dictionary.
+
+    Parameters
+    ==========
+    dict : Dictionary
+        A dictionary derived from a yaml file. Source language as keys and the target language as values.
+    line : String
+        A string need to be processed.
+    """
     words = line.split()
     new_line = ""
-    for word in words:
-        find = dict.get(word)
-        last = word[-1]
 
-        if last == "," or last == ";" or last == ".": last = last + " "
-        else: last = " "
+    for word in words:
+        fst = word[0]
+        last = word[-1]
+        # Check if the word ends with a punctuation
+        if last == "," or last == ";" or last == ".":
+            clean_word = word[0:-1]
+            last = last + " "
+        elif last == "]":
+            clean_word = word[0:-1]
+        else:
+            clean_word = word
+            last = " "
+
+        # Check if the word starts with "["
+        if fst == "[":
+            clean_word = clean_word[1:]
+        else:
+            clean_word = clean_word
+            fst = ""
+
+        find = dict.get(clean_word)
 
         if find == None:
-            new_line + str(word) + last
+            new_line = new_line + fst + str(clean_word) + last
         else:
-            new_line + str(find) + last
+            new_line = new_line + fst + str(find) + last
+            
     return new_line
 
 def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwords_filename=''):
@@ -87,10 +114,10 @@ def translate(src_filename, dest_filename, dest_lang, src_lang='auto', specialwo
                 if line.find("[") != -1 and line.find("]") != -1 and line.find("(") != -1 and line.find(")") != -1:
                     ignore_start = line.find("(")
                     ignore_end = line.find(")")
-                    head = replace(dict,head)
-                    tail = replace(dict,tail)
-                    head = translator.translate(line[0:ignore_start], dest_lang, src_lang).text
-                    tail = translator.translate(line[ignore_end+1:], dest_lang, src_lang).text
+                    head = replace(specialwords_dict,line[0:ignore_start])
+                    tail = replace(specialwords_dict,line[ignore_end+1:])
+                    head = translator.translate(head, dest_lang, src_lang).text
+                    tail = translator.translate(tail, dest_lang, src_lang).text
                     line = head + line[ignore_start:ignore_end+1] + tail
 
                 # Translates normally if there are no special cases
