@@ -26,7 +26,7 @@ Ok, so let's make a list now:
 
 ### Image
 Here's an image(hover to see the title text):
-![Cornell University](./image/cornell.png)
+![Cornell University](./cornell.png)
 You only need to write the name of the image in the input yaml file.
 But please directly put the image file in the image folder!
 
